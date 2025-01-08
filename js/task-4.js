@@ -15,7 +15,8 @@ function getShippingCost(country) {
             price = 120;
             break;
         default: 
-        "Sorry, there is no delivery to your country"
+        price = null;
+        return `Sorry, there is no delivery to your country`
     }
     return `Shipping to ${country} will cost ${price} credits`
 }
